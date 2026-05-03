@@ -1,0 +1,16 @@
+name: CI/CD Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ambil code
+        uses: actions/checkout@v3
+
+      - name: Build Docker Image
+        run: docker build -t procloud:1.0 .
