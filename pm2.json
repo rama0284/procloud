@@ -1,0 +1,5 @@
+{
+  "name": "procloud",
+  "script": "./bin/www",
+  "instances": "1"
+}
